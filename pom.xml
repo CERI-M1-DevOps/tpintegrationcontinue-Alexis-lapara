@@ -60,6 +60,16 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.0</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.6.3</version>
+                <configuration>
+                    <source>21</source>
+                    <encoding>UTF-8</encoding>
+                    <reportOutputDirectory>${project.build.directory}/site/apidocs</reportOutputDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
